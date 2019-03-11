@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link type="text/css" rel="stylesheet" href="./styles/graphdoc.css" />
-    <title>ItemType</title>
+    <title>UserQuery</title>
     <link href="https://fonts.googleapis.com/css?family=Ubuntu+Mono:400,700" rel="stylesheet"><link type="text/css" rel="stylesheet" href="./assets/code.css" /><link type="text/css" rel="stylesheet" href="./assets/require-by.css" />
 </head>
 <body class="slds-scrollable--y">
@@ -135,7 +135,7 @@
                 ItemSubmissionBatch
             </a>
         </li>
-        <li class="slds-is-active" title="ItemType">
+        <li  title="ItemType">
             <a href="itemtype.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
                 ItemType
             </a>
@@ -165,7 +165,7 @@
                 UserMutation
             </a>
         </li>
-        <li  title="UserQuery">
+        <li class="slds-is-active" title="UserQuery">
             <a href="userquery.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
                 UserQuery
             </a>
@@ -236,9 +236,8 @@
     </div>
     <div class="container">
         <p class="slds-text-title--caps slds-text-color--weak">OBJECT</p>
-        <h1 class="slds-text-heading--large">ItemType</h1>
-        <div class="slds-text-body--regular"><p>A type that represents a specific acceptable item in our database.</p>
-</div>
+        <h1 class="slds-text-heading--large">UserQuery</h1>
+        <div class="slds-text-body--regular"></div>
     </div>
 </section>
 <section>
@@ -249,7 +248,7 @@
             </a>
             GraphQL Schema definition
         </h2>
-        <code class="highlight"><ul class="code" style="padding-left:28px"><li><span class="keyword operator ts">type</span> <span class="identifier">ItemType</span> {</li><li></li><li><span class="tab"><span class="comment line">#   The item's unique GUID</span></span></li><li><span class="tab"><span class="meta">Id</span>: <a class="support type" href="id.doc.html">ID</a>! </span></li><li></li><li><span class="tab"><span class="comment line">#   The item's name</span></span></li><li><span class="tab"><span class="meta">Name</span>: <a class="support type" href="string.doc.html">String</a>! </span></li><li>}</li></ul></code>
+        <code class="highlight"><ul class="code" style="padding-left:28px"><li><span class="keyword operator ts">type</span> <span class="identifier">UserQuery</span> {</li><li></li><li><span class="tab"><span class="comment line">#   The current user</span></span></li><li><span class="tab"><span class="meta">Me</span>: <a class="support type" href="user.doc.html">User</a> </span></li><li>}</li></ul></code>
     </div>
 </section>
 <section>
@@ -260,7 +259,7 @@
             </a>
             Require by
         </h2>
-        <ul class="require-by"><li><a href="itemmutation.doc.html" title="ItemMutation - ">ItemMutation<em>null</em></a><li><li><a href="itemquery.doc.html" title="ItemQuery - ">ItemQuery<em>null</em></a><li><li><a href="itemsubmissionbatch.doc.html" title="ItemSubmissionBatch - A type that represents a unique submission for a specific item, including the item id and the count submitted.">ItemSubmissionBatch<em>A type that represents a unique submission for a specific item, including the item id and the count submitted.</em></a><li></ul>
+        <ul class="require-by"><li><a href="query.doc.html" title="Query - ">Query<em>null</em></a><li></ul>
     </div>
 </section>
 <footer>

@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link type="text/css" rel="stylesheet" href="./styles/graphdoc.css" />
-    <title>ItemType</title>
+    <title>UserType</title>
     <link href="https://fonts.googleapis.com/css?family=Ubuntu+Mono:400,700" rel="stylesheet"><link type="text/css" rel="stylesheet" href="./assets/code.css" /><link type="text/css" rel="stylesheet" href="./assets/require-by.css" />
 </head>
 <body class="slds-scrollable--y">
@@ -100,7 +100,7 @@
 <div class="slds-grid slds-grid--vertical slds-navigation-list--vertical">
     <h4 class="slds-text-title--caps slds-p-around--medium">Enums</h4>
     <ul>
-        <li  title="UserType">
+        <li class="slds-is-active" title="UserType">
             <a href="usertype.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
                 UserType
             </a>
@@ -135,7 +135,7 @@
                 ItemSubmissionBatch
             </a>
         </li>
-        <li class="slds-is-active" title="ItemType">
+        <li  title="ItemType">
             <a href="itemtype.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
                 ItemType
             </a>
@@ -235,9 +235,9 @@
         </div>
     </div>
     <div class="container">
-        <p class="slds-text-title--caps slds-text-color--weak">OBJECT</p>
-        <h1 class="slds-text-heading--large">ItemType</h1>
-        <div class="slds-text-body--regular"><p>A type that represents a specific acceptable item in our database.</p>
+        <p class="slds-text-title--caps slds-text-color--weak">ENUM</p>
+        <h1 class="slds-text-heading--large">UserType</h1>
+        <div class="slds-text-body--regular"><p>A specific type of user</p>
 </div>
     </div>
 </section>
@@ -249,7 +249,7 @@
             </a>
             GraphQL Schema definition
         </h2>
-        <code class="highlight"><ul class="code" style="padding-left:28px"><li><span class="keyword operator ts">type</span> <span class="identifier">ItemType</span> {</li><li></li><li><span class="tab"><span class="comment line">#   The item's unique GUID</span></span></li><li><span class="tab"><span class="meta">Id</span>: <a class="support type" href="id.doc.html">ID</a>! </span></li><li></li><li><span class="tab"><span class="comment line">#   The item's name</span></span></li><li><span class="tab"><span class="meta">Name</span>: <a class="support type" href="string.doc.html">String</a>! </span></li><li>}</li></ul></code>
+        <code class="highlight"><ul class="code" style="padding-left:28px"><li><span class="keyword operator ts">enum</span> <span class="identifier">UserType</span> {</li><li><span class="tab"></span></li><li><span class="tab"><span class="meta">Visitor</span></span></li><li><span class="tab"></span></li><li><span class="tab"><span class="meta">Employee</span></span></li><li><span class="tab"></span></li><li><span class="tab"><span class="meta">Administrator</span></span></li><li>}</li></ul></code>
     </div>
 </section>
 <section>
@@ -260,7 +260,7 @@
             </a>
             Require by
         </h2>
-        <ul class="require-by"><li><a href="itemmutation.doc.html" title="ItemMutation - ">ItemMutation<em>null</em></a><li><li><a href="itemquery.doc.html" title="ItemQuery - ">ItemQuery<em>null</em></a><li><li><a href="itemsubmissionbatch.doc.html" title="ItemSubmissionBatch - A type that represents a unique submission for a specific item, including the item id and the count submitted.">ItemSubmissionBatch<em>A type that represents a unique submission for a specific item, including the item id and the count submitted.</em></a><li></ul>
+        <ul class="require-by"><li><a href="user.doc.html" title="User - A user registered with CHaRM">User<em>A user registered with CHaRM</em></a><li></ul>
     </div>
 </section>
 <footer>
